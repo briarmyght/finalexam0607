@@ -5,4 +5,11 @@
 
 <h2>音符查詢</h2>
 
+@using (Html.BeginForm("Music", "User", FormMethod.Get))
+{
+    <p>姓名:@Html.TextBox("name")</p>
+    <p>數字:@Html.TextBox("number")</p>
+    <p>HI~~@ViewBag.name ,音符查詢為 @ViewBag.result</p>
+    <p><input type="submit" value="送出" /></p>
+}
 

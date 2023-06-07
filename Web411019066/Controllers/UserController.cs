@@ -9,9 +9,19 @@ namespace Web411019066.Controllers
     public class UserController : Controller
     {
         // GET: User
-        public ActionResult Music()
+        public ActionResult Music(string name,float? number)
         {
+            var result = "";
+
+            if (number.HasValue)
+            {
+               
+
+            }
+            ViewBag.name = name;
+            ViewBag.result = result;
             return View();
         }
+        
     }
 }
